@@ -5,7 +5,7 @@
 \include "notes.ly"
 \include "../layout.ly"
 
-#(set-global-staff-size 20)
+#(set-global-staff-size 19)
 
 \paper {
   #(set-default-paper-size "letter")
