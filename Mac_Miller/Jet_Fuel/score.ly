@@ -25,6 +25,7 @@
   \relative {
     \clef bass
     \key g \minor
+    \tempo 4 = 60
 
     ^\markup \raise #2 {Introduction [00:00:00]}
     \repeat percent 2 {\sim_a} 
