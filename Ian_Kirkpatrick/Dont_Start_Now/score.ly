@@ -1,14 +1,10 @@
 \version "2.20.0"
 \language "english"
-
 \include "notes.ly"
-\include "../../layout.ly"
 
 #(set-global-staff-size 20)
 
-\paper {
-  #(set-default-paper-size "letter")
-}
+\paper {#(set-default-paper-size "letter")}
 
 \header {
   title       = "Don't Start Now" 
@@ -40,12 +36,6 @@
     ^\markup \raise #2 {Chorus [00:48:56]}
     \chorus_A 
 
-    % ^\markup \raise #2 {Verse [01:04:19]}
-    % \verse
-
-    % ^\markup \raise #2 {Pre-Chorus [01:27:42]}
-    % \pre_chorus_A
-
     ^\markup \raise #2 {Chorus [01:42:72]}
     \mark \markup { \musicglyph "scripts.coda" }
     \chorus_B
@@ -59,13 +49,5 @@
 
     ^\markup \raise #2 {Chorus [02:29:38]}
     \repeat volta 4 {\outro}
-
   }
 }
-
-% \layout {
-%    \context {
-%      \Score
-%      \consists #(line-breaks '(4))
-%   }
-% }
