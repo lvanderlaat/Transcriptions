@@ -47,7 +47,7 @@ chorus_B = {
 pre_chorus_common = \relative{b,,1 d d8.\staccato e16~ e4~ e2} 
 
 pre_chorus_alt_a = \relative{fs,8.\staccato g16~ g4~ g2}
-pre_chorus_alt_b = \relative{fs,8.\staccato g16~ g2 r4}
+pre_chorus_alt_b = \relative{fs,8.\staccato g16~ g4. r8 r4}
 pre_chorus_alt_c = \relative{fs,8.\staccato g16~ g8 g'8~ g2\glissando}
 
 pre_chorus_A = {
@@ -88,6 +88,6 @@ instrumental = {
 outro = \relative{
   b,8. b'16~ b8 b,8~ b b'8 r b,16 cs
   d8. d'16~ d8 d,8~ d d'8 r d,16 b
-  d8. e16~ e8\glissando fs8~ fs e~ e16 e, fs e
+  d8.\staccato e16~ e8\glissando fs8~ fs e~ e16 e, fs e
   fs8. g16~ g8 g'~ g g, a4
 }
