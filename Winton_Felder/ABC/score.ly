@@ -112,6 +112,8 @@ glissandoSkipOn = {
     ^\markup {"x3"}
     \repeat volta 3 {af8 bf c c, df ef f g }
   }
+  \layout{}
+  \midi{}
 }
 
 

@@ -78,7 +78,7 @@
     e4-. c'8-. c-. r4
     b4.-. a8-. r4
     \time 2/4
-    g4.-. f8-. 
+    g4.-. fs8-. 
     \bar "||"
 
     \time 4/4
@@ -129,14 +129,32 @@
     
     \time 4/4
     ^\markup {\box{" Bridge [03:18:03] "}}
-    \repeat volta 12 {
+    \repeat volta 10 {
       e8. fs g8 a2
       b8. a  g8 a2
       b8. a  g8 a8. g fs8 
     }
     \alternative{
       {g16 (fs) e8~ e4~ e2}
-      {g16 (fs) e8~ e4~ e2~ e1\fermata}
+      {g16 (fs) e8~ e4 \ottava #1 \tuplet 3/2 {b'''16 b8 b a16} b4}
+      % {g16 (fs) e8~ e4~ e2~ e1\fermata}
+    }
+    \ottava #0
+    ^\markup {\box{" [04:37:16] "}}
+    \repeat volta 2{
+      e,,,8. fs g8 a4. b8
+      d2~ d8. b16~ b8 cs
+    }
+    \alternative{
+      {
+        e4. fs4. g4
+        g,16 (fs) e8~ e4 \ottava #1 \tuplet 3/2 {b'''16 b8 b a16} b4
+      }
+      {
+        \ottava #0
+        e,,4. fs4. g16(fs g fs)
+        e,1\fermataMarkup
+      }
     }
     \bar "||"
 
@@ -194,7 +212,7 @@
     
     ^\markup {\box{" Organ solo 2 [06:29:04] "}}
     g,4-. g-. g8 e f g
-    r g r g~ g g e16 f fs g
+    r g r g g g e16 f fs g
     g8 g r g r g e f~
     \time 2/4
     f e e16 e f fs
@@ -217,12 +235,12 @@
     }
     \bar "||"
 
-    ^\markup {\box{" [06:56:54] "}}
+    ^\markup {\box{" [06:58:54] "}}
     a, b c8 d r e~
-    e \xNote{e16 e} f8 \xNote{g} g a r b~
-    b b c \xNote{c} d e4 f8~ 
-    f1~
-    f2~ f4. e8,,~
+    e \xNote{e16 e} fs4 g8 a r b~
+    b b c4 d8 e4\glissando fs8~ 
+    fs1~
+    fs2~ fs4. e8,,~
     \bar "||"
 
     ^\markup {\box{" Verse 4 [07:08:01] "}}
@@ -254,7 +272,7 @@
 
     \time 4/4
     g4-. g-. g8 e r f 
-    r g r e~ e f(g) e
+    r g r e~ e f~ f e
     g4-. g-. g8 e g f~\tenuto 
     \time 2/4
     f e g e~

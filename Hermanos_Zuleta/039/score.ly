@@ -4,7 +4,10 @@
 
 #(set-global-staff-size 20)
 
-\paper {#(set-default-paper-size "letter")}
+\paper {
+  #(set-default-paper-size "letter")
+  #(systems-per-page = #13)
+}
 
 \header{
   title      = "039"
